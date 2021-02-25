@@ -1,0 +1,5 @@
+class UsersController < ApplicationController
+  has_many :user_books
+  has_many :books, through: :user_books
+  has_many :reviews, through: :books
+end
