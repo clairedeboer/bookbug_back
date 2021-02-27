@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/me', to: 'users#me'
 
   get '/lists', to: 'user_books#index', as: 'user_books'
+ 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
