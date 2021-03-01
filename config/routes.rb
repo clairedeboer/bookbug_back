@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get '/me', to: 'users#me'
 
   post '/user_books', to: 'user_books#create'
+  delete '/user_books/:id', to: 'user_books#destroy'
+  patch '/user_books/:id', to: 'user_books#update'
  
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
