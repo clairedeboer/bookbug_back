@@ -12,6 +12,7 @@ class UserBooksController < ApplicationController
   def update
     user_book=UserBook.find(params[:id])
     user_book.update(user_book_params)
+    render json: user_book
   end
 
   private
