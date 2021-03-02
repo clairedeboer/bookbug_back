@@ -8,7 +8,6 @@
 
 User.destroy_all
 Book.destroy_all
-UserBook.destroy_all
 Review.destroy_all
 
 User.create(name: "Claire", username: "claire", password: "123")
@@ -31,21 +30,21 @@ Book.create(title: "A Children's Bible", authors: "Lydia Millet", description: "
 Book.create(title: "Uncanny Valley", authors: "Anna Wiener", description: "The prescient, page-turning account of a journey in Silicon Valley: a defining memoir of our digital age.", thumbnail: "https://www.booksaremagic.net/i/m.php?b=mvAe9UD8Mdqn4sTozPtJzg", average_rating: 4, vendor: "Greenlight Bookstore", price: 17)
 Book.create(title: "Big Friendship", authors: "Aminatou Sow and Ann Friedman", description: "A hilarious coming-of-age story, a heartfelt manifesto, and an ode to the magic of friendship.", thumbnail: "https://www.booksaremagic.net/i/m.php?b=rPCoGQ_-yAWvyJQ8Xvb2tA", average_rating: 4, vendor: "Greenlight Bookstore", price: 26)
 
-UserBook.create(user_id: 1, book_id: 1, status: "Want to Read")
-UserBook.create(user_id: 2, book_id: 2, status: "Want to Read")
-UserBook.create(user_id: 3, book_id: 3, status: "Want to Read")
-UserBook.create(user_id: 1, book_id: 4, status: "Reading")
-UserBook.create(user_id: 2, book_id: 5, status: "Reading")
-UserBook.create(user_id: 3, book_id: 6, status: "Reading")
-UserBook.create(user_id: 1, book_id: 7, status: "Completed")
-UserBook.create(user_id: 2, book_id: 8, status: "Completed")
-UserBook.create(user_id: 3, book_id: 9, status: "Completed")
-UserBook.create(user_id: 1, book_id: 10, status: "Want to Read")
-UserBook.create(user_id: 2, book_id: 11, status: "Want to Read")
-UserBook.create(user_id: 3, book_id: 12, status: "Want to Read")
-UserBook.create(user_id: 1, book_id: 13, status: "Want to Read")
-UserBook.create(user_id: 2, book_id: 14, status: "Want to Read")
-UserBook.create(user_id: 3, book_id: 15, status: "Want to Read")
+# UserBook.create(user_id: 1, book_id: 1, status: "Want to Read")
+# UserBook.create(user_id: 2, book_id: 2, status: "Want to Read")
+# UserBook.create(user_id: 3, book_id: 3, status: "Want to Read")
+# UserBook.create(user_id: 1, book_id: 4, status: "Reading")
+# UserBook.create(user_id: 2, book_id: 5, status: "Reading")
+# UserBook.create(user_id: 3, book_id: 6, status: "Reading")
+# UserBook.create(user_id: 1, book_id: 7, status: "Completed")
+# UserBook.create(user_id: 2, book_id: 8, status: "Completed")
+# UserBook.create(user_id: 3, book_id: 9, status: "Completed")
+# UserBook.create(user_id: 1, book_id: 10, status: "Want to Read")
+# UserBook.create(user_id: 2, book_id: 11, status: "Want to Read")
+# UserBook.create(user_id: 3, book_id: 12, status: "Want to Read")
+# UserBook.create(user_id: 1, book_id: 13, status: "Want to Read")
+# UserBook.create(user_id: 2, book_id: 14, status: "Want to Read")
+# UserBook.create(user_id: 3, book_id: 15, status: "Want to Read")
 
 Review.create(book_id: 1, user_id: 1, rating: 5, review: "A great read.")
 Review.create(book_id: 2, user_id: 2, rating: 4, review: "My favorite book of the year.")
