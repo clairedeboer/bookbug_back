@@ -16,7 +16,7 @@ class UserBooksController < ApplicationController
   end
 
   private
-    def user_book_params
-      params.permit(:user_id, :book_id, :status)
-    end
+  def user_book_params
+    params.permit(:user_id, :book_id, :status)
+  end
 end

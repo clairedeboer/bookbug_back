@@ -6,11 +6,13 @@ Rails.application.routes.draw do
 
   get '/books', to: 'books#index'
 
-  get '/reviews', to: 'reviews#index'
+  # get '/reviews', to: 'reviews#index'
   post '/reviews', to: 'reviews#create'
 
   post '/login', to: 'users#login'
   get '/me', to: 'users#me'
+
+  post '/users', to: 'users#create'
 
   post '/user_books', to: 'user_books#create'
   delete '/user_books/:id', to: 'user_books#destroy'
