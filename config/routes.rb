@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # resources :users
 
   get '/books', to: 'books#index'
-
+  post '/books', to: 'books#create'
   # get '/reviews', to: 'reviews#index'
   post '/reviews', to: 'reviews#create'
 

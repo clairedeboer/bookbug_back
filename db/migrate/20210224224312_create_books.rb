@@ -8,6 +8,7 @@ class CreateBooks < ActiveRecord::Migration[6.1]
       t.integer :average_rating
       t.string :vendor
       t.integer :price
+      t.string :google_book_id
 
       t.timestamps
     end
