@@ -5,7 +5,6 @@ class CreateBooks < ActiveRecord::Migration[6.1]
       t.string :authors
       t.string :description
       t.string :thumbnail
-      t.integer :average_rating
       t.string :vendor
       t.integer :price
       t.string :google_book_id
