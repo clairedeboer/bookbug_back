@@ -10,9 +10,10 @@ Rails.application.routes.draw do
   post '/reviews', to: 'reviews#create'
 
   post '/login', to: 'users#login'
-  get '/me', to: 'users#me'
-
-  post '/users', to: 'users#create'
+  post '/signup', to: 'users#signup'
+  
+  # get '/me', to: 'users#me'
+  # post '/users', to: 'users#create'
 
   post '/user_books', to: 'user_books#create'
   delete '/user_books/:id', to: 'user_books#destroy'
