@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
   post '/login', to: 'users#login'
   post '/signup', to: 'users#signup'
-  
-  # get '/me', to: 'users#me'
+  delete '/logout', to: 'users#delete'
+  get '/me', to: 'users#me'
   # post '/users', to: 'users#create'
 
   post '/user_books', to: 'user_books#create'
