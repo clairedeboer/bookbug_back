@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 User.destroy_all
 Book.destroy_all
 Review.destroy_all
@@ -29,22 +21,6 @@ Book.create(title: "Hamnet", authors: "Maggie O'Farrell", description: "Of all t
 Book.create(title: "A Children's Bible", authors: "Lydia Millet", description: "In A Children’s Bible, the age-old war between kids and their parents, children and adults, is reimagined through the lens of Biblical devastation. ", thumbnail: "https://www.booksaremagic.net/i/m.php?b=L0V8Hcd1MxZ_Ghe7Kc_OIQ", vendor: "Greenlight Bookstore", price: 25.95)
 Book.create(title: "Uncanny Valley", authors: "Anna Wiener", description: "The prescient, page-turning account of a journey in Silicon Valley: a defining memoir of our digital age.", thumbnail: "https://www.booksaremagic.net/i/m.php?b=mvAe9UD8Mdqn4sTozPtJzg", vendor: "Greenlight Bookstore", price: 17)
 Book.create(title: "Big Friendship", authors: "Aminatou Sow and Ann Friedman", description: "A hilarious coming-of-age story, a heartfelt manifesto, and an ode to the magic of friendship.", thumbnail: "https://www.booksaremagic.net/i/m.php?b=rPCoGQ_-yAWvyJQ8Xvb2tA", vendor: "Greenlight Bookstore", price: 26)
-
-# UserBook.create(user_id: 1, book_id: 1, status: "Want to Read")
-# UserBook.create(user_id: 2, book_id: 2, status: "Want to Read")
-# UserBook.create(user_id: 3, book_id: 3, status: "Want to Read")
-# UserBook.create(user_id: 1, book_id: 4, status: "Reading")
-# UserBook.create(user_id: 2, book_id: 5, status: "Reading")
-# UserBook.create(user_id: 3, book_id: 6, status: "Reading")
-# UserBook.create(user_id: 1, book_id: 7, status: "Completed")
-# UserBook.create(user_id: 2, book_id: 8, status: "Completed")
-# UserBook.create(user_id: 3, book_id: 9, status: "Completed")
-# UserBook.create(user_id: 1, book_id: 10, status: "Want to Read")
-# UserBook.create(user_id: 2, book_id: 11, status: "Want to Read")
-# UserBook.create(user_id: 3, book_id: 12, status: "Want to Read")
-# UserBook.create(user_id: 1, book_id: 13, status: "Want to Read")
-# UserBook.create(user_id: 2, book_id: 14, status: "Want to Read")
-# UserBook.create(user_id: 3, book_id: 15, status: "Want to Read")
 
 Review.create(book_id: 1, user_id: 1, rating: 4, review: "A great read.")
 Review.create(book_id: 2, user_id: 2, rating: 4, review: "My favorite book of the year.")
