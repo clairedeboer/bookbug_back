@@ -1,6 +1,6 @@
-# README
+# BookBug Backend
 
-https://shielded-plateau-49004.herokuapp.com/books
+https://shielded-plateau-49004.herokuapp.com
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
